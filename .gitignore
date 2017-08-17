@@ -50,3 +50,29 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Cmake files and folder
+Makefile
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles/
+
+# Bin folder
+bin/*
+!bin/.gitkeep
+.DS_Store
+
+# Build folder
+build/*
+!build/.gitkeep
+
+# Config overridded
+config/nextdeploy.conf
+
+# tmp folder
+tmp
+
+# doxygen folder
+doxy/*
+!doxy/nextdeploy.png
+!doxy/.gitkeep
