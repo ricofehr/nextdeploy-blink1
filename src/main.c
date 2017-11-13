@@ -1,3 +1,8 @@
+/**
+ *  @file main.c
+ *  @brief NextDeploy-Blink Main file
+ *  @author Eric Fehr (ricofehr@nextdeploy.io, github: ricofehr)
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,7 +35,7 @@ int main(int argc, char* argv[])
 
         r = g = b = 0;
         switch (nd_status) {
-            case ND_IDLE: g = 255; break;
+            case ND_IDLE: g = 255; r = 128; b = 128; break;
             case ND_WORKING: b = 255; break;
             case ND_VM_ERROR: r = 255; break;
             case ND_VM_DOWN: r = 255; g = 153; break;
